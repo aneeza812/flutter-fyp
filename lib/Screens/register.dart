@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/plan.dart';
+import 'package:flutter_auth/Screens/termservices.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/components/rounded_input_field.dart';
-
+import 'package:flutter/gestures.dart';
 import '../constants.dart';
 
 class Register extends StatefulWidget {
@@ -14,6 +15,8 @@ class _RegisterState extends State<Register> {
   bool valuefirst = false;
   @override
   Widget build(BuildContext context) {
+    TextStyle defaultStyle = TextStyle(color: Colors.grey, fontSize: 20.0);
+    TextStyle linkStyle = TextStyle(color: Colors.blue);
     return Scaffold(
         appBar: new AppBar(
           title: Text('Evordinator'),
@@ -173,6 +176,37 @@ class _RegisterState extends State<Register> {
                           // hintText: 'weak password')
                         ),
                       ),
+                      // RichText(
+                      //   text: TextSpan(
+                      //     style: defaultStyle,
+                      //     children: <TextSpan>[
+                      //       TextSpan(
+                      //           text: 'By clicking Sign Up, you agree to our '),
+                      //       TextSpan(
+                      //           text: 'Terms of Service',
+                      //           style: linkStyle,
+                      //           recognizer: TapGestureRecognizer()
+                      //             ..onTap = () {
+                      //               Navigator.push(
+                      //                 context,
+                      //                 MaterialPageRoute(
+                      //                   builder: (context) {
+                      //                     return TermsServices();
+                      //                   },
+                      //                 ),
+                      //               );
+                      //             }),
+                      //       TextSpan(text: ' and that you have read our '),
+                      //       TextSpan(
+                      //           text: 'Privacy Policy',
+                      //           style: linkStyle,
+                      //           recognizer: TapGestureRecognizer()
+                      //             ..onTap = () {
+                      //               print('Privacy Policy"');
+                      //             }),
+                      //     ],
+                      //   ),
+                      // ),
                       CheckboxListTile(
                         // secondary: const Icon(Icons.add_alert),
                         title: const Text(

@@ -12,6 +12,7 @@ import 'package:flutter_auth/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:material_floating_search_bar/material_floating_search_bar.dart';
 
+import '../dialogflow.dart';
 import '../register.dart';
 
 class LocationPg extends StatefulWidget {
@@ -233,6 +234,25 @@ class _LocationPgState extends State<LocationPg> {
                 MaterialPageRoute(
                   builder: (context) {
                     return userform();
+                  },
+                ),
+              );
+            },
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(
+              top: 500, left: 115, bottom: 80, right: 115),
+          child: RoundedButton(
+            color: kPrimaryLightColor,
+            textColor: Colors.black87,
+            text: "Chatbot ",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomePageDialogflow();
                   },
                 ),
               );

@@ -25,7 +25,10 @@ dependencies:
   dio: ^1.0.13
   get:
   rating_bar: 
-  rating_dialog: 
+  rating_dialog:
+  flutter_dialogflow: ^0.1.2
+  bubble: 
+  intl:
   # fluttertoast: ^3.1.0
 
   # The following adds the Cupertino Icons font to your application.
@@ -52,6 +55,9 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/applied-fusion-317810-da611b7d22c3.json
+    - assets/applied-fusion-317810-1f606acab908.json
+    - assets/fyp-ol9f-9db587d70397.json
     - assets/giphy.gif
     - assets/giphy2.gif
   #  - images/a_dot_ham.jpeg
