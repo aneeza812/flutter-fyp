@@ -26,14 +26,14 @@ class Body extends StatelessWidget {
               style:
                   TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: size.height * 0.02),
+            SizedBox(height: size.height * 0.04),
             SvgPicture.asset(
               "assets/icons/orange_clock.svg",
-              height: size.height * 0.4,
+              height: size.height * 0.5,
               color: kPrimaryColor,
             ),
             RoundedInputField(
-              hintText: "Your Email",
+              hintText: "Enter Your Email",
               onChanged: (value) {},
             ),
             RoundedPasswordField(

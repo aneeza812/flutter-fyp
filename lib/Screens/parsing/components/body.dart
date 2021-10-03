@@ -20,9 +20,9 @@ class Body extends StatelessWidget {
           AppBar(),
           SizedBox(height: size.height * 0.08),
           Text(
-            "Are you a service provider or service seeker?",
+            "Are you a Service provider or Service seeker?",
             style:
-                TextStyle(fontWeight: FontWeight.bold, height: 3, fontSize: 15),
+                TextStyle(fontWeight: FontWeight.bold, height: 5, fontSize: 17),
           ),
           SizedBox(height: size.height * 0.05),
           SvgPicture.asset(
